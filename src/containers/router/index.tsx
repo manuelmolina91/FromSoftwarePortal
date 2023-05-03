@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-route
 import { getAuthenticatedToken } from "../../services/storage/token"
 import Signup from "../../views/Auth/Signup";
 //import Login from  "../../views/Auth/Login"
+import Welcome from "../../views/welcome";
 
 
 
@@ -35,6 +36,8 @@ const Router: FC = () => {
     return (
         <BrowserRouter>
         <Routes>
+        <Route path="/" element={<HandleSession><Welcome /></HandleSession>}></Route>
+        <Route path='/welcome' element={<Welcome/>}/>
         <Route path='/signup' element={<HandleSession><Signup/></HandleSession>}/>
         </Routes>
         </BrowserRouter>
