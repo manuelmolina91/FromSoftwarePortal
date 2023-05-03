@@ -2,12 +2,11 @@ import styled from 'styled-components'
 
 export const WelcomeContainer = styled.div`
 background-size: cover;
-background-position: 100% 100%;
-width: 100vw;
-height:100vh;
-align-items: center;
 display: flex;
-justify-content: left;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
 `
 export const WelcomeVideo = styled.video`
   position: fixed;
@@ -20,35 +19,48 @@ export const WelcomeVideo = styled.video`
 `;
 
 export const ButtonBoxes = styled.div`
-    position: absolute;
-    top: 40vh;
-    flex-direction:column;
-    margin-left: 90px;
-    display: flex;
-    background: transparent;
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    width: 250px;
-    height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  max-width: 600px;
+  width: 10%;
+  margin-top: 300px;
 `
 
 export const ButtonLogin = styled.button`
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 20px;
-    padding: 5px;
-    &:hover{
-        background-image: linear-gradient(to right, #7F0909 ,#FFD700);
-    }
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  &:hover {
+    background: linear-gradient(to bottom, #000000, #ffffff);
+    color: black;
+    border: 2px solid black;
+  }
 `
 
 export const ButtonSignup = styled.button`
-     border-radius: 5px;
-    cursor: pointer;
-    margin: 20px;
-    padding: 5px;
-    background-color: ${({ theme }) => theme.colors.white100};
-    &:hover{
-        background-image: linear-gradient(to right, #2A623D ,#FFD700);
-    }
-`
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  &:hover {
+    background: linear-gradient(to bottom, #FF4500, #8B0000);
+    color: black;
+    border: 2px solid black;
+  }
+`;
