@@ -6,7 +6,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-height: 100vh;
+max-height: 100vh;
+overflow: hidden;
 `
 export const WelcomeVideo = styled.video`
   position: fixed;
@@ -24,7 +25,7 @@ export const ButtonBoxes = styled.div`
   padding: 40px;
   max-width: 600px;
   width: 10%;
-  margin-top: 300px;
+  margin-top: 100px;
 `
 
 export const ButtonLogin = styled.button`
@@ -64,3 +65,9 @@ export const ButtonSignup = styled.button`
     border: 2px solid black;
   }
 `;
+
+export const TitlePage = styled.h1`
+font-size: 150px;
+margin-top: 20px;
+font-family: Bruno+Ace;
+`

@@ -29,10 +29,7 @@ const theme = {
       red100: '#E53935',
       pink100: '#f72faa',
       yellow: 'rgb(254, 153, 1)'
-  
-  
-  
     },
   }
   
-  export default theme
+export default theme

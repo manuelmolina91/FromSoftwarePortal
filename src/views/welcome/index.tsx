@@ -1,6 +1,9 @@
 import { FC, memo } from "react";
 import useLogic from "./logic";
-import { ButtonBoxes, ButtonLogin, ButtonSignup, WelcomeContainer, WelcomeVideo } from './styles';
+import { ButtonBoxes, ButtonLogin, ButtonSignup, WelcomeContainer, WelcomeVideo, TitlePage } from './styles';
+<style>
+@import url('https://fonts.googleapis.com/css2? family= Bruno+Ace & display=swap');
+</style>
 
 const Welcome: FC = () => {
     const {
@@ -9,6 +12,7 @@ const Welcome: FC = () => {
     } = useLogic()
     return (
         <WelcomeContainer>
+            <TitlePage>FromSoftware</TitlePage>
             <WelcomeVideo
                 autoPlay
                 muted
