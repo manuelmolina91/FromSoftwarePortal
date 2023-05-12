@@ -3,7 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-route
 import { getAuthenticatedToken } from "../../services/storage/token"
 import Signup from "../../views/Auth/Signup";
 //import Login from  "../../views/Auth/Login"
-import Welcome from "../../views/welcome";
+import Landing  from "../../views/landing";
 
 
 
@@ -27,7 +27,7 @@ const Router: FC = () => {
                 location.pathname === "/login"  ||
                 location.pathname === "/"
             ) {
-                return <Navigate to="/Welcome" replace state={{ from: location }} />;
+                return <Navigate to="/Landing" replace state={{ from: location }} />;
             }
         }
         return children;
@@ -36,8 +36,8 @@ const Router: FC = () => {
     return (
         <BrowserRouter>
         <Routes>
-        <Route path="/" element={<HandleSession><Welcome /></HandleSession>}></Route>
-        <Route path='/welcome' element={<Welcome/>}/>
+        <Route path="/" element={<HandleSession><Landing /></HandleSession>}></Route>
+        <Route path='/landing' element={<Landing/>}/>
         <Route path='/signup' element={<HandleSession><Signup/></HandleSession>}/>
         </Routes>
         </BrowserRouter>

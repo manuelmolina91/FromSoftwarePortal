@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const WelcomeContainer = styled.div`
+export const LandingContainer = styled.div`
 background-size: cover;
 display: flex;
 flex-direction: column;
@@ -41,7 +41,7 @@ export const ButtonLogin = styled.button`
   text-transform: uppercase;
   transition: all 0.3s ease;
   &:hover {
-    background: linear-gradient(to bottom, #000000, #ffffff);
+    background: linear-gradient(to bottom, #ffffff, #ebebeb, #d7d7d7, #c3c3c3, #afafaf, #9c9c9c, #8a8a8a, #777777);
     color: black;
     border: 2px solid black;
   }
@@ -69,5 +69,5 @@ export const ButtonSignup = styled.button`
 export const TitlePage = styled.h1`
 font-size: 150px;
 margin-top: 20px;
-font-family: Bruno+Ace;
+font-family: monospace;
 `

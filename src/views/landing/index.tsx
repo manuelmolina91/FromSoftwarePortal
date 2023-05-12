@@ -1,17 +1,17 @@
 import { FC, memo } from "react";
 import useLogic from "./logic";
-import { ButtonBoxes, ButtonLogin, ButtonSignup, WelcomeContainer, WelcomeVideo, TitlePage } from './styles';
+import { ButtonBoxes, ButtonLogin, ButtonSignup, LandingContainer, WelcomeVideo, TitlePage } from './styles';
 <style>
-@import url('https://fonts.googleapis.com/css2? family= Bruno+Ace & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Special+Elite&display=swap');
 </style>
 
-const Welcome: FC = () => {
+const Landing: FC = () => {
     const {
         handleGoToLogin,
         handleGoToSignup,
     } = useLogic()
     return (
-        <WelcomeContainer>
+        <LandingContainer>
             <TitlePage>FromSoftware</TitlePage>
             <WelcomeVideo
                 autoPlay
@@ -26,8 +26,8 @@ const Welcome: FC = () => {
                 <ButtonLogin onClick={handleGoToLogin}>Login</ButtonLogin>
                 <ButtonSignup onClick={handleGoToSignup}>Signup</ButtonSignup>
             </ButtonBoxes>
-        </WelcomeContainer>
+        </LandingContainer>
     )
 }
 
-export default memo(Welcome)
+export default memo(Landing)

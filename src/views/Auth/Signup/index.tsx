@@ -158,8 +158,8 @@ const SignUp: FC = () => {
                                            <Input
                                                 $hasError={!!meta?.error}
                                                 type="country"
-                                                placeholder="Insert your city"
-                                                autoComplete="city"
+                                                placeholder="Insert your country"
+                                                autoComplete="country"
                                                 {...field}
                                            />{' '}
                                            {!!meta?.error && (
