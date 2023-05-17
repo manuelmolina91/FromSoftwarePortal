@@ -1,9 +1,6 @@
 import { FC, memo } from "react";
 import useLogic from "./logic";
-import { ButtonBoxes, ButtonLogin, ButtonSignup, LandingContainer, WelcomeVideo, TitlePage } from './styles';
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Special+Elite&display=swap');
-</style>
+import { LandingContainer, RightSection, LeftSection } from './styles';
 
 const Landing: FC = () => {
     const {
@@ -12,20 +9,22 @@ const Landing: FC = () => {
     } = useLogic()
     return (
         <LandingContainer>
-            <TitlePage>FromSoftware</TitlePage>
-            <WelcomeVideo
+            <LeftSection>
+                <p>Sumérgete en los apasionantes juegos de FromSoftware y descubre experiencias únicas, historias cautivadoras y desafiantes mecánicas de juego. Explora los fascinantes personajes, revela sus trasfondos y motivaciones. Descubre la importancia estratégica de objetos y herramientas, moldea tu propia experiencia de juego. Únete a nosotros y adéntrate en esta apasionante odisea. ¡Enciende el sol y encuentra tu propio camino!
+                <br /> ¡Praise the sun!</p>
+            </LeftSection>
+            <RightSection
                 autoPlay
                 muted
                 loop
                 playsInline
-                //src="https://i.gifer.com/NYNh.mp4"
-                src="https://i.imgur.com/L1WLUHR.mp4"
+                src="https://thumbs.gfycat.com/ShadyVigilantBeardedcollie-mobile.mp4"
                 className="trailer-video"
             />
-            <ButtonBoxes>
+            {/* <ButtonBoxes>
                 <ButtonLogin onClick={handleGoToLogin}>Login</ButtonLogin>
                 <ButtonSignup onClick={handleGoToSignup}>Signup</ButtonSignup>
-            </ButtonBoxes>
+            </ButtonBoxes> */}
         </LandingContainer>
     )
 }
