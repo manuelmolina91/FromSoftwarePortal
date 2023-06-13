@@ -1,6 +1,9 @@
 import { FC, memo } from "react";
 import useLogic from "./logic";
-import { LandingContainer, RightSection, LeftSection } from './styles';
+import { LandingContainer, RightSection, LeftSection, MaxContaier } from './styles';
+import NavBar from "../../components/NavBar";
+
+
 
 const Landing: FC = () => {
     const {
@@ -8,6 +11,8 @@ const Landing: FC = () => {
         handleGoToSignup,
     } = useLogic()
     return (
+        <MaxContaier>
+            <NavBar />
         <LandingContainer>
             <LeftSection>
                 <p>Sumérgete en los apasionantes juegos de FromSoftware y descubre experiencias únicas, historias cautivadoras y desafiantes mecánicas de juego. Explora los fascinantes personajes, revela sus trasfondos y motivaciones. Descubre la importancia estratégica de objetos y herramientas, moldea tu propia experiencia de juego. Únete a nosotros y adéntrate en esta apasionante odisea. ¡Enciende el sol y encuentra tu propio camino!
@@ -26,6 +31,7 @@ const Landing: FC = () => {
                 <ButtonSignup onClick={handleGoToSignup}>Signup</ButtonSignup>
             </ButtonBoxes> */}
         </LandingContainer>
+        </MaxContaier>
     )
 }
 

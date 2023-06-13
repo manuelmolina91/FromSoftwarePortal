@@ -60,6 +60,8 @@ padding: 0;
 export const RightSection = styled.video`
 align-items: flex-end;
 margin: 5px;
+padding-top: 100px;
+padding-right: 25px;
 width: 50%;
 `
 
@@ -69,6 +71,13 @@ export const LeftSection = styled.div`
   color: white;
   font-size: 25px;
   margin: 5px;
-  padding: 50px;
+  padding-top: 160px;
+  padding-left: 40px;
+  padding-right: 30px;
   width: 50%;
 `;
+
+export const MaxContaier = styled.div`
+background-color: black;
+width: 100%;
+`
